@@ -1,0 +1,35 @@
+<script defer> $(function() {$.get('static/html/cards/programming-card.html', function(data) {$('#skill1').html(data);});});</script>
+<script defer> $(function() {$.get('static/html/cards/ml-card.html', function(data) {$('#skill2').html(data);});});</script>
+<script defer> $(function() {$.get('static/html/cards/engineering-card.html', function(data) {$('#skill3').html(data);});});</script>
+
+<div class="album py-5 glass-skills rounded-3">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="">
+
+            <div class="col" id="skill1"></div>
+            <div class="col" id="skill2"></div>
+            <div class="col-sm-12" id="skill3"></div>
+            
+        </div>
+    </div>
+</div>
+
+<style>
+    .glass-skills{
+        background: url('static/assets/imgs/workplace.jpg') no-repeat center;
+        background-size: cover;
+
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+        border: none;
+    }
+
+    .glass-card{
+        background-image: linear-gradient(135deg, rgba(225,225,225,0.5), rgba(225,225,225,0.3));     
+        --bs-card-bg: linear-gradient(135deg, rgba(225,225,225,0.5), rgba(225,225,225,0.3));
+
+        backdrop-filter: blur(10px);
+        border: none;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+    }
+</style>
