@@ -18,14 +18,14 @@
         <a class="nav-link" href="#projects-main">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact-main">Contact</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
         <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="">Resume</a></li>
-          <li><a class="dropdown-item" href="">Github</a></li>
-          <li><a class="dropdown-item" href="">LinkedIn</a></li>
+          <li><a class="dropdown-item" href="static/assets/CV.pdf" target="_blank">Resume</a></li>
+          <li><a class="dropdown-item" href="https://github.com/r-evaar" target="_blank">Github</a></li>
+          <li><a class="dropdown-item" href="https://www.linkedin.com/in/abdallarashed1195/" target="_blank">LinkedIn</a></li>
         </ul>
       </li>
     </ul>
@@ -54,5 +54,13 @@
     --bs-card-bg: linear-gradient(135deg, rgba(16, 49, 74, 0.7), rgba(41, 18, 55, 0.69));
 
     border-radius: 0 0 7.5px 7.5px;
+  }
+
+  .nav-link:hover{
+    cursor: pointer;
+  }
+
+  .dropdown-item:active{
+    background-image: linear-gradient(135deg, rgba(149, 96, 205, 0.862), rgba(98, 171, 198, 0.775));
   }
 </style>
