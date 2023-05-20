@@ -44,6 +44,6 @@ main > div {
     margin-bottom: 20px;
 }
 
-.navbar-toggler:active:focus {
-    border: none !important;
+h2.glass {
+    padding: 3%;
 }

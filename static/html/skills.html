@@ -2,13 +2,15 @@
 <script defer> $(function() {$.get('static/html/cards/ml-card.html', function(data) {$('#skill2').html(data);});});</script>
 <script defer> $(function() {$.get('static/html/cards/engineering-card.html', function(data) {$('#skill3').html(data);});});</script>
 
+<h2 class="glass rounded-3">Skills</h2>
 <div class="album py-5 glass-skills rounded-3">
+
     <div class="container">
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="">
+        <div class="row row-cols-sm-2 row-cols-md-3 g-3" id="">
 
-            <div class="col" id="skill1"></div>
-            <div class="col" id="skill2"></div>
+            <div class="col-sm-6" id="skill1"></div>
+            <div class="col-sm-6" id="skill2"></div>
             <div class="col-sm-12" id="skill3"></div>
             
         </div>
@@ -32,4 +34,31 @@
         border: none;
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
     }
+
+    .r2{
+        color: rgb(9, 67, 89);
+        font-weight: bolder;
+    }
+
+    .card p {
+        color: rgb(45, 40, 63);
+        font-weight: 500;
+        font-size: 1.15rem;
+    }
+
+    .card h3 {
+        color: rgb(53, 28, 52);
+    }
+
+    .card-image {
+        height: 225px;
+        width: 100%;
+
+        border-radius: 7.5px 7.5px 0 0;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 </style>

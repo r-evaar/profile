@@ -1,34 +1,36 @@
-  <div class="container-fluid navbar-dark">
-    <a class="navbar-brand" href="#">Abdalla Rashed</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<script defer src="static/js/scrolling.js"></script>
 
-    <div class="collapse navbar-collapse" id="navbarsExample03">
-      <ul class="navbar-nav me-auto mb-2 mb-sm-0"  id="nav-content">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#cover-main">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills-main">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Resume</a></li>
-            <li><a class="dropdown-item" href="#">Github</a></li>
-            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+<div class="container-fluid navbar-dark">
+  <a class="navbar-brand" href="#">Abdalla Rashed</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExample03">
+    <ul class="navbar-nav me-auto mb-2 mb-sm-0"  id="nav-content">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#cover-main">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills-main">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects-main">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="">Resume</a></li>
+          <li><a class="dropdown-item" href="">Github</a></li>
+          <li><a class="dropdown-item" href="">LinkedIn</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
+</div>
 
 <style>
 
@@ -38,6 +40,13 @@
     display: flex;
     justify-content: end;
 
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
   }
 
   #navbar-main {
