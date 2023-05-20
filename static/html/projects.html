@@ -12,8 +12,13 @@
       <img class="d-block w-100 proj-img" id="proj1-img">
       <div class="carousel-caption d-md-block">
         <div class="cr-clear">
-        <h4>First slide label</h4>
-        <p>Some representative placeholder content for the first slide.</p>
+            <div class="project-card project-card-text">
+                <h4>FOD Inspection System</h4>
+                <p>Vision-Powered solution for detecting foreign objects in aircraft engine bays</p>
+            </div>
+            <div class="project-card project-card-btn">
+                <a type="button" class="btn btn-sm btn-outline-light" href="https://www.lockheedmartin.com/en-ae/news/interns-unveil-ai-powered-solution-for-aircraft-inspection.html" target="_blank">More</a>
+            </div>
         </div>
       </div>
     </div>
@@ -21,8 +26,13 @@
       <img class="d-block w-100 proj-img" id="proj2-img">
       <div class="carousel-caption d-md-block">
         <div class="cr-clear">
-        <h4>Second slide label</h4>
-        <p>Some representative placeholder content for the second slide.</p>
+            <div class="project-card project-card-text">
+                <h4>AI Aircraft Inspection</h4>
+                <p>AI-Powered solution for detecting external strutural defects on aircrafts</p>
+            </div>
+            <div class="project-card project-card-btn">
+                <a type="button" class="btn btn-sm btn-outline-light" href="https://www.lockheedmartin.com/en-ae/news/lockheed-martin-runs-uae-designed-ai-inspection-capability-.html" target="_blank">More</a>
+            </div>
         </div>
       </div>
     </div>
@@ -30,8 +40,13 @@
       <img class="d-block w-100 proj-img" id="proj3-img">
       <div class="carousel-caption d-md-block">
         <div class="cr-clear">
-        <h4>Third slide label</h4>
-        <p>Some representative placeholder content for the third slide.</p>
+            <div class="project-card project-card-text">
+                <h4>Autonomous Robot for Temperature Abnormalities Detection</h4>
+                <p>All-terrain robot with environment-tuned autonomous navigation capabilities for detecting temperature abnormalities at aluminum smelters</p>
+            </div>
+            <div class="project-card project-card-btn">
+                <a type="button" class="btn btn-sm btn-outline-light" href="https://media.ega.ae/team-from-abu-dhabi-university-wins-first-place-in-ega-student-industrial-robotics-competition/" target="_blank">More</a>
+            </div>
         </div>
       </div>
     </div>
@@ -39,8 +54,13 @@
         <img class="d-block w-100 proj-img" id="proj4-img">
         <div class="carousel-caption d-md-block">
             <div class="cr-clear">
-                <h4>Fourth slide label</h4>
-                <p>Some representative placeholder content for the forth slide.</p>
+                <div class="project-card project-card-text">
+                    <h4>AI-Powered Autonomous Robot for Pit and Flue Wall Health Condition Assessment</h4>
+                    <p>Autonomous Drone with pre-planned navigation for monitoring the operating conditions of aluminum anode baking furnace</p>
+                </div>
+                <div class="project-card project-card-btn">
+                    <a type="button" class="btn btn-sm btn-outline-light" href="https://media.ega.ae/students-from-abu-dhabi-university-claim-first-place-in-ega-industrial-robotics-competition/" target="_blank">More</a>
+                </div>
             </div>
         </div>
       </div>
@@ -102,5 +122,48 @@
 
         border-radius: 7.5px;
         padding: 10px;
+
+        text-align: left;
+        position: relative;
+
+        display: flex;
     }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .project-card * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-card a {
+        padding: 5px;
+    }
+
+    .project-card h4 {
+        padding: 5px 0 10px 0;
+    }
+
+    .project-card-text {
+        flex-grow: 1;
+        margin: 0px;
+        padding: 3px 10px;
+    }
+
+    .project-card-btn {
+        margin: 3px 10px;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url('static/assets/svgs/arrow-right.svg');
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url('static/assets/svgs/arrow-left.svg');
+    }
+
 </style>

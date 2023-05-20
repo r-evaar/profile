@@ -1,20 +1,72 @@
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Abdalla Rashed</span>
-      </div>
+<script>
+    $(function(){
+        const now = new Date();
+        document.getElementById('currentYear').textContent = now.getFullYear();
+    })
+</script>
   
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-            <a class="text-body-secondary" href="tel:+971 52 124 0215">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                </svg>
+<div class="f-container">
+    <div class="row" style="width: 100%;">
+        <div id="copyright" class="col-5 col-md-7 col-lg-8 col-xl-9">
+            © <span id="currentYear"></span> Abdalla Rashed</span>
+        </div>
+        <div class="col-7 col-md-5 col-lg-4 col-xl-3 fi-contatiner">
+            <a href="tel:+971521240215">
+                <img src="static/assets/svgs/telephone-fill.svg"><p>+971 52 124 0215</p>
             </a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+            <a href="mailto:r.abdalla.1195@gmail.com">
+                <img src="static/assets/svgs/envelope-at-fill.svg"><p>r.abdalla.1195@gmail.com</p>
+            </a>
+            <a href="https://goo.gl/maps/NhmA5SHJP722qvdM6?coh=178572&entry=tt" target="_blank">
+                <img src="static/assets/svgs/geo-alt-fill.svg"><p>Sharjah, UAE</p>
+            </a>
+        </div>
+    </div>
+</div>            
+
+<style>
+
+    #copyright{
+        
+    }
+
+    .f-container{
+        border-image: linear-gradient(90deg, #4a305567, #43a8df68) 30;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+
+        margin-top: 20px;
+        padding-top: 30px;
+    }
+
+    .footer-link {
+        font-size: 0.5rem;
+        padding-left: 10px;
+    }
+
+    .fi-contatiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fi-contatiner a {
+        text-decoration: none;
+    }
+    .fi-contatiner a img {
+        width: 20px;
+    }
+    .fi-contatiner a p {
+        display: inline-block;
+        padding-left: 10px;
+        color: #2f1347;
+        font-weight: bold;
+    }
+
+    .fi-contatiner a p:hover {
+        color: #2f1347c5;
+    }
+
+    .fi-contatiner a p:active {
+        color: #5e173f;
+    }
+</style>
