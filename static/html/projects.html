@@ -86,18 +86,6 @@
         border-radius: 7.5px;
     }
 
-    @media (max-width: 768px){
-        .proj-img{
-            height: 450px;
-        }
-    }
-
-    @media (max-width: 576px){
-        .proj-img{
-            height: 300px;
-        }
-    }
-
     #proj1-img{
         background-image: url('static/assets/imgs/fod.jpg');
     }
@@ -140,12 +128,34 @@
         padding: 0;
     }
 
-    .project-card a {
+    .project-card p {
+        font-size: 0.75rem;
         padding: 5px;
     }
 
     .project-card h4 {
+        font-size: 1.35rem;
         padding: 5px 0 10px 0;
+    }
+
+    @media (max-width: 768px){
+        .proj-img{
+            height: 450px;
+        }
+    }
+
+    @media (max-width: 576px){
+        .proj-img{
+            height: 300px;
+        }
+
+        .project-card h4 {
+            font-size: 1rem;
+        }
+
+        .project-card p {
+            font-size: 0.75rem;
+        }
     }
 
     .project-card-text {
