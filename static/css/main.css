@@ -47,3 +47,30 @@ main > div {
 h2.glass {
     padding: 3%;
 }
+
+/* ------- Fonts -------------------------------------- */
+
+@font-face {
+    font-family: Acme;
+    src: url(../assets/fonts/Acme-Regular.woff);
+}
+@font-face {
+    font-family: Exo;
+    src: url(../assets/fonts/Exo-SemiBold.woff);
+}
+@font-face {
+    font-family: Sora;
+    src: url(../assets/fonts/Sora-VariableFont_wght.woff);
+}
+
+.f-sora{
+    font-family: Sora, sans-serif;
+}
+
+.f-exo{
+    font-family: Exo, sans-serif;
+}
+
+.f-acme{
+    font-family: Acme, sans-serif;
+}
