@@ -8,7 +8,13 @@ const navbar_collapes = document.querySelector('.navbar-collapse');
 anchorLinks.forEach(function(anchorLink) {
     anchorLink.addEventListener('click', function(e) {
 
-    toggler.click()
+    var collapsed = $(".navbar-toggler").is(":visible");
+    var offset = 0;
+
+    if ( collapsed ) {
+        toggler.click();
+        offset = navbar_collapes.scrollHeight;
+    }
 
     e.preventDefault(); // Prevent the default link behavior
 
@@ -16,7 +22,7 @@ anchorLinks.forEach(function(anchorLink) {
     const targetId = anchorLink.getAttribute('href');
 
     // Calculate the target position
-    const targetPosition = document.querySelector(targetId).offsetTop - 76 - navbar_collapes.scrollHeight;
+    const targetPosition = document.querySelector(targetId).offsetTop - 76 - offset;
 
     // Scroll smoothly to the target position
     window.scrollTo({
