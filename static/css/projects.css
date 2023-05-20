@@ -1,0 +1,103 @@
+.proj-img{
+    background-color: rgb(82, 53, 91);
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 7.5px;
+}
+
+#proj1-img{
+    background-image: url('../assets/imgs/fod.jpg');
+}
+#proj2-img{
+    background-image: url('../assets/imgs/ais.jpg');
+}
+#proj3-img{
+    background-image: url('../assets/imgs/ega2.jpg');
+}
+#proj4-img{
+    background-image: url('../assets/imgs/ega3.jpg');
+}
+
+.cr-clear {
+    font-weight: bold;
+    color: white;
+    
+    background-image: linear-gradient(135deg, rgba(127, 83, 140, 0.3), rgba(27, 130, 143, 0.364));
+
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+
+    border-radius: 7.5px;
+    padding: 10px;
+
+    text-align: left;
+    position: relative;
+
+    display: flex;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.project-card * {
+    margin: 0;
+    padding: 0;
+}
+
+.project-card p {
+    font-size: 0.75rem;
+    padding: 5px;
+}
+
+.project-card h4 {
+    font-size: 1.35rem;
+    padding: 5px 0 10px 0;
+}
+
+.project-card-text {
+    flex-grow: 1;
+    margin: 0px;
+    padding: 3px 10px;
+}
+
+.project-card-btn {
+    margin: 3px 10px;
+}
+
+.project-card-btn a {
+    padding: 3px 10px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../assets/svgs/arrow-right.svg');
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../assets/svgs/arrow-left.svg');
+}
+
+@media (max-width: 768px){
+    .proj-img{
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px){
+    .proj-img{
+        height: 300px;
+    }
+
+    .project-card h4 {
+        font-size: 1rem;
+    }
+
+    .project-card p {
+        font-size: 0.75rem;
+    }
+}

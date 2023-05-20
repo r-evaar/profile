@@ -5,14 +5,14 @@
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi, I'm Abdalla!</h1>
+        <h5 style="margin-bottom: 20px;">
+            Machine Learning Researcher | Backend Developer 
+        </h5>
         <p class="lead">
-            I'm a Machine Learning researcher in Computer Vision applications 
+            I do research in Computer Vision applications. I'm currently learning RESTful APIs to create my own PyTorch-based image processing service 
         </p>
         <p class="lead">
-            I'm currently learning RESTful APIs to create my own PyTorch-based image processing service 
-        </p>
-        <p class="lead">
-            also .. I love cats 😺
+            Have a thrilling new idea and seeking collaboration? <a href="#contact-main" id="shout">Give me a shout</a>! I'll be happy to help 😄
         </p>
       </div>
     </div>
@@ -32,4 +32,42 @@
         background-color: rgba(0, 0, 0, 0.05);
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
     }
+
+    #shout {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(115, 38, 134, 1), rgba(33, 96, 151, 1));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #shout:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(115, 38, 134, 0.7), rgba(33, 96, 151, 0.7));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #shout:focus {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(231, 32, 48, 1), rgb(117, 93, 183));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
   </style>
+
+  <script>
+    const a = document.getElementById('shout');
+    a.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        // Scroll smoothly to the target position
+        const targetId = a.getAttribute('href');
+        const targetPosition = document.querySelector(targetId).offsetTop
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+  </script>
