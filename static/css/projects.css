@@ -4,8 +4,6 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-
-    border-radius: 7.5px;
 }
 
 .cr-clear {
@@ -24,6 +22,10 @@
     position: relative;
 
     display: flex;
+}
+
+.carousel-caption{
+    
 }
 
 .project-card {
@@ -63,10 +65,14 @@
 
 .carousel-control-next-icon {
     background-image: url('../assets/svgs/arrow-right.svg');
+    height: 81px;
+    width: 50px;
 }
 
 .carousel-control-prev-icon {
     background-image: url('../assets/svgs/arrow-left.svg');
+    height: 81px;
+    width: 50px;
 }
 
 @media (max-width: 768px){

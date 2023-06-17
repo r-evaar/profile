@@ -1,5 +1,5 @@
 <div class="container col-xxl-10 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
       <div class="col-sm-12 col-lg-5" id="profile-centering">
         <img src="static/assets/imgs/personal.png" class="center-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" loading="lazy" id="personal-photo">
       </div>
@@ -35,8 +35,21 @@
     }
 
     .clear {
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(180, 190, 199, 0.75);
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .bg-1 {
+        background-image: url("static/assets/imgs/cover.jpg");
+        opacity: 0.45;
+        background-size: cover;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     #shout {

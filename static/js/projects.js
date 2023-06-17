@@ -1,7 +1,7 @@
 // Get the carousel element
 var carousel = document.getElementById('carouselExampleIndicators');
 // Get all the images in the carousel
-var images = carousel.querySelectorAll('img');
+var images = carousel.querySelectorAll('.proj-img');
 // Loop through the images and load them asynchronously
 
 urls = [
