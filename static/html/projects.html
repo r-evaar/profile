@@ -9,7 +9,7 @@
   </div>
   <div class="carousel-inner rounded-3 f-exo">
     <div class="carousel-item active">
-      <img class="d-block w-100 proj-img" id="proj1-img">
+      <img class="d-block w-100 proj-img">
       <div class="carousel-caption d-md-block">
         <div class="cr-clear">
             <div class="project-card project-card-text">
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 proj-img" id="proj2-img">
+      <img class="d-block w-100 proj-img">
       <div class="carousel-caption d-md-block">
         <div class="cr-clear">
             <div class="project-card project-card-text">
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 proj-img" id="proj3-img">
+      <img class="d-block w-100 proj-img">
       <div class="carousel-caption d-md-block">
         <div class="cr-clear">
             <div class="project-card project-card-text">
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100 proj-img" id="proj4-img">
+        <img class="d-block w-100 proj-img">
         <div class="carousel-caption d-md-block">
             <div class="cr-clear">
                 <div class="project-card project-card-text">
@@ -75,25 +75,7 @@
   </button>
 </div>
 
-<script>
-    // Get the carousel element
-    var carousel = document.getElementById('carouselExampleIndicators');
-
-    // Get all the images in the carousel
-    var images = carousel.querySelectorAll('img');
-    
-    // Loop through the images and load them asynchronously
-    for (var i = 0; i < images.length; i++) {
-      images[i].addEventListener('load', function () {
-        // Do something when the image has loaded
-        console.log('Image ' + this.src + ' is loaded');
-      });
-    }
-    $('#carouselExampleIndicators').carousel({
-        interval: 3000,
-        cycle: true
-    }); 
-</script>
+<script src="static/js/projects.js"></script>
 
 <style>
     .carousel-control-prev:focus,

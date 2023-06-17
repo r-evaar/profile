@@ -8,19 +8,6 @@
     border-radius: 7.5px;
 }
 
-#proj1-img{
-    background-image: url('../assets/imgs/fod.jpg');
-}
-#proj2-img{
-    background-image: url('../assets/imgs/ais.jpg');
-}
-#proj3-img{
-    background-image: url('../assets/imgs/ega2.jpg');
-}
-#proj4-img{
-    background-image: url('../assets/imgs/ega3.jpg');
-}
-
 .cr-clear {
     font-weight: bold;
     color: white;
