@@ -94,3 +94,18 @@
         font-size: 0.75rem;
     }
 }
+
+@media (max-width: 400px){
+    .proj-img{
+        height: 400px;
+    }
+
+    .project-card p {
+        font-size: 0.75rem;
+    }
+    
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 49px;
+        width: 30px;
+    }
+}
