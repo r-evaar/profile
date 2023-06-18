@@ -27,10 +27,6 @@
     display: flex;
 }
 
-.carousel-caption{
-    
-}
-
 .project-card {
     display: flex;
     flex-direction: column;
@@ -79,15 +75,15 @@
 }
 
 @media (max-width: 768px){
-    .proj-img{
+    /* .proj-img-container, .proj-img{
         height: 450px;
-    }
+    } */
 }
 
 @media (max-width: 576px){
-    .proj-img{
+    /* .proj-img-container, .proj-img{
         height: 300px;
-    }
+    } */
 
     .project-card h4 {
         font-size: 1rem;
@@ -99,9 +95,9 @@
 }
 
 @media (max-width: 400px){
-    .proj-img{
+    /* .proj-img-container, .proj-img{
         height: 400px;
-    }
+    } */
 
     .project-card p {
         font-size: 0.75rem;
