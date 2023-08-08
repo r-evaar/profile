@@ -39,17 +39,17 @@
 }
 
 .cls-c1 {
-    stop-color: rgb(37, 104, 130);
+    stop-color: rgb(37, 104, 130, 0.7);
   }
 .cls-c2 {
-    stop-color: rgb(128, 0, 109);
+    stop-color: rgb(128, 0, 109, 0.7);
 }
 
 .cls-c1-actv {
-    stop-color: rgb(37, 104, 130, 0.8);
+    stop-color: rgb(37, 104, 130, 0.5);
   }
 .cls-c2-actv {
-    stop-color: rgb(128, 0, 109, 0.8);
+    stop-color: rgb(128, 0, 109, 0.5);
 }
 
 .cls-btn-svg {
@@ -105,4 +105,42 @@
     height: 100%;
     overflow-y:scroll;
     margin-bottom: 2%;
+}
+
+::-webkit-scrollbar{
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track{
+    background: hsl(0, 0%, 85%);
+}
+
+::-webkit-scrollbar-thumb{
+    background: hsla(278, 48%, 13%, 0.317);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: hsla(278, 48%, 13%, 0.687);
+    cursor: pointer;
+}
+
+#paper > .paper-body::-webkit-scrollbar-track{
+    margin-block: .75rem;
+    border-radius: 100vw;
+}
+
+#paper > .paper-body::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    border: 0.2rem solid hsl(0, 0%, 85%);
+}
+
+@supports (scrollbar-color: red blue){
+    * {
+        scrollbar-color: hsla(278, 48%, 13%, 0.317) hsl(0, 0%, 85%);
+        scrollbar-width: thin;
+    }
+}
+
+.paper-body > .text-area {
+    width: 95%;
 }
