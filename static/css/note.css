@@ -143,4 +143,29 @@
 
 .paper-body > .text-area {
     width: 95%;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: rgb(58, 11, 11);
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 0;
+    margin-top: 2rem;
+}
+
+.author {
+    color: rgb(13, 64, 74);
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 0;
+    margin-top: 2rem;
+}
+
+.postscript {
+    color: rgb(34, 46, 47);
+    font-size: 1.5rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
 }
