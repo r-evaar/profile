@@ -73,6 +73,16 @@ h2.glass {
     src: url(../assets/fonts/Sora-VariableFont_wght.woff);
 }
 
+@font-face {
+    font-family: Caveat-B;
+    src: url(../assets/fonts/CaveatBrush-Regular.woff);
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(../assets/fonts/Caveat-VariableFont_wght.woff);
+}
+
 .f-sora{
     font-family: Sora, sans-serif;
 }
@@ -83,4 +93,12 @@ h2.glass {
 
 .f-acme{
     font-family: Acme, sans-serif;
+}
+
+.f-caveat{
+    font-family: Caveat, sans-serif;
+}
+
+.f-caveat-b{
+    font-family: Caveat-B, sans-serif;
 }
