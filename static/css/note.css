@@ -38,29 +38,64 @@
     border-radius: 10px;
 }
 
-.cls-c1 {
-    stop-color: rgb(37, 104, 130, 0.7);
-  }
-.cls-c2 {
-    stop-color: rgb(128, 0, 109, 0.7);
+.note-h-btn{
+    display: block;
+    width: 26px;
+    height: 26px;
+    
+    position: absolute;
+    top: 0%;
+    
+    border-radius: 4px;
 }
 
-.cls-c1-actv {
-    stop-color: rgb(37, 104, 130, 0.5);
-  }
-.cls-c2-actv {
-    stop-color: rgb(128, 0, 109, 0.5);
+#close-btn {
+    background: linear-gradient(135deg, rgba(25, 17, 55, 0.7), rgba(24, 45, 63, 0.7));
+    -webkit-mask-image: url('../assets/svgs/close-button.svg');
+    mask-image: url('../assets/svgs/close-button.svg');
+    background-size: 26px 26px;
+    right: 0;
 }
 
-.cls-btn-svg {
-    fill: url(#cls-gradient);
+/* #download-btn{
+    background: linear-gradient(135deg, rgb(69, 63, 112), rgba(47, 69, 88, 0.7));
+    -webkit-mask-image: url('../assets/svgs/download.svg');
+    mask-image: url('../assets/svgs/download.svg');
+    background-size: 26px 26px;
+    right: 30px;
+} */
+
+#download-btn{
+    background: url('../assets/svgs/pdf.png');
+    background-size: 26px 26px;
+    right: 60px;
 }
 
-.cls-btn-svg-actv {
-    fill: url(#cls-gradient-actv);
+#font-btn{
+    background: linear-gradient(135deg, rgb(49, 23, 40), rgba(88, 47, 62, 0.7));
+    right: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#paper > header {
+.note-h-btn {
+    transition: 0.2s transform ease-in-out;
+}
+
+.note-h-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.95;
+}
+
+#paper > .note-header {
     position: relative;
     min-height: min(40px, 6%);
     display: flex;
@@ -70,26 +105,11 @@
     width: 100%;
 }
 
-#paper > header > h2 {
+#paper > .note-header > h2 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
     font-weight: bold;
-}
-
-#cls-container {
-    position: absolute;
-    right: 0;
-    top: 0%;
-}
-
-#cls-container {
-    transition: 0.2s transform ease-in-out;
-}
-
-#cls-container:hover {
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 #paper {
@@ -143,16 +163,17 @@
 
 .paper-body > .text-area {
     width: 95%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.2;
+    font-weight: 500;
 }
 
 .subtitle {
     color: rgb(58, 11, 11);
     font-size: 1.6rem;
     font-weight: bold;
-    line-height: 0;
-    margin-top: 2rem;
+    line-height: 1;
+    margin-top: 2.2rem;
 }
 
 .author {
@@ -165,7 +186,33 @@
 
 .postscript {
     color: rgb(34, 46, 47);
-    font-size: 1.5rem;
     margin-top: 8rem;
     margin-bottom: 3rem;
+}
+
+.conclusion {
+    color: rgb(30, 80, 115);
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.f-toggled-b, .f-toggled{
+    font-family: Toggle;
+}
+
+.f-toggled-b {
+    font-size: 1rem;
+}
+
+h2.f-toggled-b {
+    font-size: 1.5rem;
+}
+
+.f-toggled .subtitle, .f-toggled .author{
+    font-size: 1.1rem;
+}
+
+.f-toggled {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
 }

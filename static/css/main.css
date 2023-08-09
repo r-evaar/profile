@@ -83,6 +83,11 @@ h2.glass {
     src: url(../assets/fonts/Caveat-VariableFont_wght.woff);
 }
 
+@font-face {
+    font-family: Toggle;
+    src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.woff);
+}
+
 .f-sora{
     font-family: Sora, sans-serif;
 }
