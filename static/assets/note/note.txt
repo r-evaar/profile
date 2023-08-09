@@ -1,6 +1,9 @@
 ~B~Updates
 I've added a new feature to automatically create notes from the 'static/assets/note/note.txt ' file. New updates will be listed here. An example is shown below.
 
+~B~In Progress
+- Download Note as PDF
+
 ~B~Lorem Ipsum 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim tellus odio. Nulla posuere nibh ut erat auctor blandit. Nam pellentesque feugiat purus vel eleifend. Phasellus tempor quam in felis malesuada egestas ut eu nibh. Praesent sit amet rutrum massa. Ut posuere ut libero sed gravida. Proin porttitor sit amet urna fermentum sagittis. Ut euismod pellentesque volutpat. Nunc in augue ut nisi vehicula egestas. Nullam fringilla, mauris gravida luctus malesuada, justo enim euismod urna, et iaculis ante ante eu nunc. Suspendisse potenti. Vestibulum rhoncus, lacus eu placerat accumsan, enim ante eleifend felis, pellentesque volutpat risus urna a justo.
 
