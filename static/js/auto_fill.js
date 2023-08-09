@@ -14,7 +14,8 @@ function processParagraphForTags(paragraph) {
     const tags = {
       'B': 'subtitle',
       'P': 'postscript',
-      'A': 'author'
+      'A': 'author',
+      'C': 'conclusion'
     };
 
     const firstChar = paragraph[0];
@@ -45,8 +46,7 @@ async function loadParagraphsFromFile(filePath) {
   
       const text = await response.text();
       const paragraphs = text.split('\n'); // Assuming paragraphs are separated by two newline characters
-  
-      const paragraphsContainer = document.getElementById('note-text');
+      const paragraphsContainer = document.querySelector('.paper-body > #note-text');
       paragraphs.forEach(paragraph => {
         paragraphElement = processParagraphForTags(paragraph);
         paragraphsContainer.appendChild(paragraphElement);
@@ -59,12 +59,12 @@ async function loadParagraphsFromFile(filePath) {
 fetch('static/assets/note/config.json')
   .then(response => response.json())
   .then(data => {
-    const anchor = document.querySelector('#paper > header > h2');
+    const anchor = document.querySelector('#paper > .note-header > h2');
     anchor.textContent = data['title'];
     loadParagraphsFromFile('static/assets/note/note.txt');
   })
   .catch(error => {
-    // throw error;
+    throw error;
     console.log('Note unavailable');
 });
 
