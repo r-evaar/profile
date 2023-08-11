@@ -92,7 +92,11 @@
 .note-h-btn:hover {
     cursor: pointer;
     transform: scale(1.1);
-    opacity: 0.95;
+    opacity: 0.90;
+}
+
+.note-h-btn:active {
+    opacity: 0.70;
 }
 
 #paper > .note-header {
@@ -110,6 +114,13 @@
     padding-top: 20px;
     padding-bottom: 10px;
     font-weight: bold;
+}
+
+@media(max-width: 576px){
+    #paper > .note-header > h2 {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
 }
 
 #paper {
@@ -196,6 +207,20 @@
     margin-bottom: 1.8rem;
 }
 
+.mono, .mono.f-toggled {
+    display: inline-block;
+
+    margin-top: 2.5rem !important;
+    padding: 0.1rem 0.75rem !important;
+    border-radius: 10px !important;
+
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+
+    background-color:#5d56634a;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
 .f-toggled-b, .f-toggled{
     font-family: Toggle;
 }
@@ -215,4 +240,13 @@ h2.f-toggled-b {
 .f-toggled {
     font-size: 1rem !important;
     line-height: 1.5 !important;
+}
+
+#note-date{
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgb(65, 87, 88);
+    margin-right: 20px;
 }

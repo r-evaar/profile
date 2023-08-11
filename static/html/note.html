@@ -1,15 +1,21 @@
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
 <script src="static/js/note_in.js" defer></script>
 <script src="static/js/auto_fill.js" defer></script>
-<div class="container-sm" id="paper">
+<script src="static/js/pdf.js" defer></script>
+
+<div class="container-sm canvas_div_pdf" id="paper">
     <div class="note-header">
-        <h2 class="f-caveat-b"></h2>
+        <h2 class="f-toggled-b"></h2>
         <a id="close-btn" class="note-h-btn"></a>
         <a id="font-btn" class="note-h-btn f-caveat-b">F</a>
         <a id="download-btn" class="note-h-btn"></a>
     </div>
     
     <div class="paper-body">
-        <div class="text-area f-caveat" id="note-text">
+        <div class="text-area f-toggled" id="note-text">
         </div>
+        <div id="note-date"></div>
     </div>
 </div>
