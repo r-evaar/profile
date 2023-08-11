@@ -25,3 +25,9 @@ font_btn.addEventListener('click', function(e){
         });
     });
 });
+
+var noteDate = document.querySelector('#note-date');
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short'};
+var now = new Date();
+noteDate.textContent = now.toLocaleDateString('en-AE', options);
+// noteDate.textContent = 'Saturday, 12 August 2023 at 01:34 AM GST';

@@ -15,7 +15,8 @@ function processParagraphForTags(paragraph) {
       'B': 'subtitle',
       'P': 'postscript',
       'A': 'author',
-      'C': 'conclusion'
+      'C': 'conclusion',
+      'M': 'mono'
     };
 
     const firstChar = paragraph[0];
