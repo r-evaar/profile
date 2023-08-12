@@ -176,7 +176,7 @@
     width: 95%;
     font-size: 1.6rem;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: normal;
 }
 
 .subtitle {
@@ -246,7 +246,7 @@ h2.f-toggled-b {
     text-align: center;
     font-family: Tech;
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: normal;
     color: rgb(65, 87, 88);
     margin-right: 20px;
 }

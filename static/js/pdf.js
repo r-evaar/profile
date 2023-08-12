@@ -23,6 +23,21 @@ var splitOpts = {
     direction: 'ltr'
 };
 
+function getColorValues(colorString) {
+    const color = /rgb\((\d+),\s(\d+),\s(\d+)/.exec(colorString);
+
+    if (color) {
+    const r = parseInt(color[1], 10);
+    const g = parseInt(color[2], 10);
+    const b = parseInt(color[3], 10);
+
+    return { r, g, b };
+    } else {
+    return undefined;
+    }
+}
+
+const inlineFactor = 0.25;
 var prevBot = 0;
 function printLine(lineElement) {
     var style = getComputedStyle(lineElement);
@@ -34,18 +49,20 @@ function printLine(lineElement) {
     var fontSize = getNumberFromAttr(style, 'font-size')*0.8;
     var lineHeight = getNumberFromAttr(style, 'line-height');
     var fontFamily = style['font-family'];
+    var fontWeight = style['font-weight'];
+    var color = getColorValues(style['color']);
 
     var textAlign = style['text-align'];
 
-    pdf.setFont(fontFamily);
+    pdf.setFont(fontFamily, fontWeight);
     pdf.setFontSize(fontSize);
+    pdf.setTextColor(color.r,color.g,color.b);
 
     var parsedText = pdf
         .splitTextToSize(lineElement.textContent, docWidth-margin*2, splitOpts);
     
-    // console.log(y, marginTop, padTop, marginBot, padBot, fontSize);
-    y += Math.max(marginTop-prevBot, 0)+padTop;
-    prevBot = marginBot;
+    y += Math.max(marginTop-prevBot, 0)*inlineFactor;
+    prevBot = marginBot*inlineFactor;
 
     parsedText.forEach(line => {
         line = line.trim();
@@ -64,7 +81,6 @@ function printLine(lineElement) {
             } else if (textAlign == 'end') {
                 x = docWidth-textWidth-margin;
             }
-            
         }
         
         pdf.text(line, x, y);
@@ -72,7 +88,8 @@ function printLine(lineElement) {
 
         y += fontSize;
     });
-    y += marginBot+padBot;
+    // pdf.text('[y='+Math.round(y)+', m='+marginBot+', fz='+fontSize+'] ', x, y); y += fontSize; // Debugging
+    y += marginBot*inlineFactor;
 };
 
 var x = margin;
