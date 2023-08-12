@@ -1,24 +1,23 @@
 ~B~Updates
-I've added a new feature to automatically create notes from the 'static/assets/note/note.txt ' file. New updates will be listed here. An example is shown below.
+- New feature to display notes generated automaitcally from source files.
+- Change font of the note's body.
+- Download the note as PDF.
 
 ~B~In Progress
-- Download Note as PDF
+- Fix font weights & spacing in the downloaded file.
+
+~B~Example Note
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim tellus odio. Nulla posuere nibh ut erat auctor blandit. 
+
+~M~$ sudo program foo -a mod1 mod2 --arg param --flag
 
 ~B~Lorem Ipsum 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim tellus odio. Nulla posuere nibh ut erat auctor blandit. Nam pellentesque feugiat purus vel eleifend. Phasellus tempor quam in felis malesuada egestas ut eu nibh. Praesent sit amet rutrum massa. Ut posuere ut libero sed gravida. Proin porttitor sit amet urna fermentum sagittis. Ut euismod pellentesque volutpat. Nunc in augue ut nisi vehicula egestas. Nullam fringilla, mauris gravida luctus malesuada, justo enim euismod urna, et iaculis ante ante eu nunc. Suspendisse potenti. Vestibulum rhoncus, lacus eu placerat accumsan, enim ante eleifend felis, pellentesque volutpat risus urna a justo.
+Nam pellentesque feugiat purus vel eleifend. Phasellus tempor quam in felis malesuada egestas ut eu nibh. Praesent sit amet rutrum massa. Ut posuere ut libero sed gravida. Proin porttitor sit amet urna fermentum sagittis. Ut euismod pellentesque volutpat. Nunc in augue ut nisi vehicula egestas. Nullam fringilla, mauris gravida luctus malesuada, justo enim euismod urna, et iaculis ante ante eu nunc. Suspendisse potenti. Vestibulum rhoncus, lacus eu placerat accumsan, enim ante eleifend felis, pellentesque volutpat risus urna a justo.
 
-Quisque iaculis diam diam, vel lobortis elit accumsan at. Morbi ac tortor semper, venenatis ipsum eu, varius arcu. Mauris non eleifend nunc, vel pulvinar neque. Praesent vitae eros a enim laoreet finibus vel quis ex. Aenean feugiat diam eu nibh pretium, vel placerat urna malesuada. Nullam ullamcorper porttitor arcu venenatis congue. Etiam euismod ullamcorper odio, at congue arcu dapibus sit amet. Cras nec dapibus neque, id pretium mauris.
+Mauris et tempus nunc, eu mattis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi felis, eleifend aliquam iaculis vitae, condimentum egestas urna. Vestibulum et lacinia velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sagittis lacus nec ante maximus facilisis. Integer porttitor tristique nisi, vel auctor felis porttitor at. Curabitur ultricies nisi nec elit maximus, eu ullamcorper ante blandit. Mauris consequat bibendum nisl, vel tempor purus porttitor a. Nam sollicitudin blandit iaculis. Suspendisse ac iaculis justo. Sed pellentesque varius lacinia. Sed venenatis arcu vel enim iaculis, ut dapibus magna elementum. Vivamus laoreet leo eu nunc aliquet ullamcorper. Nullam vehicula ante neque, ut sodales elit ultricies sit amet.
 
-~B~Phasellus tempu
-In sit amet sapien vitae sem auctor pellentesque in in augue. Nullam sed eleifend nisl. Sed ac sapien nisl. Curabitur non urna in mauris scelerisque lacinia at vitae sem. Sed eu risus sed lorem imperdiet mattis ut sed augue. Vestibulum nunc tellus, molestie ornare gravida at, ultricies quis enim.
-
-Integer finibus vestibulum libero at placerat. Phasellus et arcu auctor, tristique libero vel, feugiat lacus. Quisque vestibulum sit amet est at venenatis. Mauris viverra ligula at elit vehicula, quis ultrices lacus hendrerit.
-
-~B~Morbi enim mauris placerat ac sodales in
-Nam nec nunc euismod, mollis massa non, sagittis nulla. Duis ut faucibus justo, quis pharetra justo. Cras aliquet augue in ipsum vulputate suscipit.
-
-~B~Duis ut faucibus justo
-Cras aliquet augue in ipsum vulputate suscipit. Curabitur urna augue, tincidunt a aliquet sed, efficitur rhoncus lorem.
+Nullam facilisis nunc eros. Nunc aliquam, massa id vulputate aliquam, arcu odio consequat tellus, in porta libero dui eu sapien. Integer nec vehicula nibh. Curabitur vitae nisl a justo finibus semper. Suspendisse urna elit, feugiat quis ultricies sed, ullamcorper et orci. Nunc nec orci ac nunc ultrices varius sed vitae elit. Phasellus cursus ex metus, ut dignissim neque auctor eget. Duis non metus finibus ante eleifend venenatis. Praesent ut ipsum iaculis, condimentum mauris auctor, scelerisque urna. Sed in quam pharetra, pulvinar augue sit amet, mattis odio. Etiam mauris orci, gravida sit amet dictum at, bibendum a ante. Duis felis augue, ornare dapibus dui pretium, rutrum condimentum massa.
 
 ~A~Author
 

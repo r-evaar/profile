@@ -52,20 +52,21 @@ async function loadParagraphsFromFile(filePath) {
         paragraphElement = processParagraphForTags(paragraph);
         paragraphsContainer.appendChild(paragraphElement);
       });
+      compilePDF();
     } catch (error) {
       console.error('An error occurred:', error);
     }
   }
   
+try {
 fetch('static/assets/note/config.json')
   .then(response => response.json())
   .then(data => {
     const anchor = document.querySelector('#paper > .note-header > h2');
     anchor.textContent = data['title'];
     loadParagraphsFromFile('static/assets/note/note.txt');
-  })
-  .catch(error => {
-    throw error;
-    console.log('Note unavailable');
-});
-
+  });
+} catch(error) {
+  // throw error;
+  console.log('Note unavailable');
+};

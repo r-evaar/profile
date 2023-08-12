@@ -85,7 +85,17 @@ h2.glass {
 
 @font-face {
     font-family: Toggle;
-    src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.woff);
+    src: url(../assets/fonts/OpenSans-VariableFont_wdth.woff);
+}
+
+@font-face {
+    font-family: Tech;
+    src: url(../assets/fonts/ShareTechMono-Regular.woff);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../assets/fonts/UbuntuMono-Regular.woff);
 }
 
 .f-sora{
@@ -106,4 +116,12 @@ h2.glass {
 
 .f-caveat-b{
     font-family: Caveat-B, sans-serif;
+}
+
+.f-tech{
+    font-family: Tech, sans-serif;
+}
+
+.f-ubuntu{
+    font-family: Ubuntu, sans-serif;
 }

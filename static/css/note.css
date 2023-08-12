@@ -176,7 +176,7 @@
     width: 95%;
     font-size: 1.6rem;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: normal;
 }
 
 .subtitle {
@@ -210,7 +210,7 @@
 .mono, .mono.f-toggled {
     display: inline-block;
 
-    margin-top: 2.5rem !important;
+    margin: 0rem !important;
     padding: 0.1rem 0.75rem !important;
     border-radius: 10px !important;
 
@@ -218,7 +218,7 @@
     line-height: 1.5rem !important;
 
     background-color:#5d56634a;
-    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    font-family: Ubuntu;
 }
 
 .f-toggled-b, .f-toggled{
@@ -244,9 +244,9 @@ h2.f-toggled-b {
 
 #note-date{
     text-align: center;
-    font-family: monospace;
+    font-family: Tech;
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: normal;
     color: rgb(65, 87, 88);
     margin-right: 20px;
 }
