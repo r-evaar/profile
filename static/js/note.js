@@ -1,3 +1,5 @@
+try {
+
 fetch('static/assets/note/config.json')
   .then(response => response.json())
   .then(data => {
@@ -16,14 +18,15 @@ fetch('static/assets/note/config.json')
 
     var note_wrapper = document.querySelector('.note-wrapper');
 
+    $.get('static/html/note.html', function(data) {$('.note-paper').html(data);});
+
     btn.addEventListener('click', function(e) {
         note_wrapper.classList.add('nw-active');
-        $(function() {$.get('static/html/note.html', function(data) {$('.note-paper').html(data);});});
     });
 
-  })
-  .catch(error => {
-    // throw error;
-    console.log('Note unavailable');
 });
 
+} catch(error) {
+  // throw error;
+  console.log('Note unavailable');
+};

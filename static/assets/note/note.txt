@@ -1,24 +1,19 @@
 ~B~Updates
-I've added a new feature to automatically create notes from the 'static/assets/note/note.txt ' file. New updates will be listed here. An example is shown below.
+- New feature to display notes generated automaitcally from source files.
+- Change font of the note's body.
+- Download the note as PDF.
 
 ~B~In Progress
-- Download Note as PDF
+- Fix font weights & spacing in the downloaded file.
+
+~B~Example Note
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim tellus odio. Nulla posuere nibh ut erat auctor blandit. 
+
+~M~$ sudo program foo -a mod1 mod2 --arg param --flag
 
 ~B~Lorem Ipsum 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim tellus odio. Nulla posuere nibh ut erat auctor blandit. Nam pellentesque feugiat purus vel eleifend. Phasellus tempor quam in felis malesuada egestas ut eu nibh. Praesent sit amet rutrum massa. Ut posuere ut libero sed gravida. Proin porttitor sit amet urna fermentum sagittis. Ut euismod pellentesque volutpat. Nunc in augue ut nisi vehicula egestas. Nullam fringilla, mauris gravida luctus malesuada, justo enim euismod urna, et iaculis ante ante eu nunc. Suspendisse potenti. Vestibulum rhoncus, lacus eu placerat accumsan, enim ante eleifend felis, pellentesque volutpat risus urna a justo.
-
-Quisque iaculis diam diam, vel lobortis elit accumsan at. Morbi ac tortor semper, venenatis ipsum eu, varius arcu. Mauris non eleifend nunc, vel pulvinar neque. Praesent vitae eros a enim laoreet finibus vel quis ex. Aenean feugiat diam eu nibh pretium, vel placerat urna malesuada. Nullam ullamcorper porttitor arcu venenatis congue. Etiam euismod ullamcorper odio, at congue arcu dapibus sit amet. Cras nec dapibus neque, id pretium mauris.
-
-~B~Phasellus tempu
-In sit amet sapien vitae sem auctor pellentesque in in augue. Nullam sed eleifend nisl. Sed ac sapien nisl. Curabitur non urna in mauris scelerisque lacinia at vitae sem. Sed eu risus sed lorem imperdiet mattis ut sed augue. Vestibulum nunc tellus, molestie ornare gravida at, ultricies quis enim.
-
-Integer finibus vestibulum libero at placerat. Phasellus et arcu auctor, tristique libero vel, feugiat lacus. Quisque vestibulum sit amet est at venenatis. Mauris viverra ligula at elit vehicula, quis ultrices lacus hendrerit.
-
-~B~Morbi enim mauris placerat ac sodales in
-Nam nec nunc euismod, mollis massa non, sagittis nulla. Duis ut faucibus justo, quis pharetra justo. Cras aliquet augue in ipsum vulputate suscipit.
-
-~B~Duis ut faucibus justo
-Cras aliquet augue in ipsum vulputate suscipit. Curabitur urna augue, tincidunt a aliquet sed, efficitur rhoncus lorem.
+Nam pellentesque feugiat purus vel eleifend. Phasellus tempor quam in felis malesuada egestas ut eu nibh. Praesent sit amet rutrum massa. Ut posuere ut libero sed gravida. Proin porttitor sit amet urna fermentum sagittis. Ut euismod pellentesque volutpat. Nunc in augue ut nisi vehicula egestas. Nullam fringilla, mauris gravida luctus malesuada, justo enim euismod urna, et iaculis ante ante eu nunc. Suspendisse potenti. Vestibulum rhoncus, lacus eu placerat accumsan, enim ante eleifend felis, pellentesque volutpat risus urna a justo.
 
 ~A~Author
 
