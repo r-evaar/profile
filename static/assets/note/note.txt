@@ -4,7 +4,7 @@
 - Download the note as PDF.
 
 ~B~In Progress
-- Fix font weights & spacing in the downloaded file.
+- NA
 
 ~B~Example Note
 
