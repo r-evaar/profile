@@ -58,6 +58,15 @@ h2.glass {
     padding: 3%;
 }
 
+.glass-card h5, .glass-card h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.glass-card h5{
+    color: rgb(60, 32, 97);
+}
+
 /* ------- Fonts -------------------------------------- */
 
 @font-face {
